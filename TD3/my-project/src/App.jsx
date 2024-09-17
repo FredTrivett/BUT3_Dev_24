@@ -17,7 +17,7 @@ function App() {
         <ButtonCVA intent="desactive" size="medium" rounde="rd">
           Desactive - Rounded
         </ButtonCVA>
-        <ButtonCVA intent="outline" size="medium" rounde="rd">
+        <ButtonCVA intent="outline" size="medium" rounde="rd" edge>
           Outline - Rounded
         </ButtonCVA>
       </div>

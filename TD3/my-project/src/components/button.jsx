@@ -1,6 +1,7 @@
 import { cva } from "class-variance-authority";
+import { FaEdge } from "react-icons/fa";
 
-const base = "base"; 
+const base = "base flex items-center justify-center transition duration-200 ease-in-out"; 
 
 const buttonVariants = cva(base, {
   variants: {
@@ -35,6 +36,7 @@ export default function ButtonCVA({
   size,
   rounde,
   children,
+  edge,
   ...props
 }) {
   return (
@@ -43,6 +45,7 @@ export default function ButtonCVA({
       {...props}
     >
       {children}
+      {edge && <FaEdge className="ml-2"/>}
     </button>
   );
 }
